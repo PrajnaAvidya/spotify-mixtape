@@ -1,0 +1,2 @@
+docker-compose for mongo/jupyter
+put stuff on the same network so jupyter can access mongo
