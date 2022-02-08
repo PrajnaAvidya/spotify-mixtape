@@ -1,2 +1,8 @@
-docker-compose for mongo/jupyter
-put stuff on the same network so jupyter can access mongo
+create spotify platlist with result
+min/max times
+ML model
+- what model? meanshift looking promising
+- how many clusters?
+- how to pick best cluster?
+IaC + CI/CD
+react UI w/ spotify auth flow

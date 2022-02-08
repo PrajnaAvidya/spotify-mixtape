@@ -1,0 +1,21 @@
+services:
+  jupyter:
+    build: .
+    volumes:
+      - .:/home/jovyan/mixtape
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    ports:
+      - "8888:8888"
+    networks:
+      - mixtape
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    networks:
+      - mixtape
+
+networks:
+  mixtape:
+    driver: "bridge"
